@@ -24,6 +24,18 @@ async function getGenreByID(req, res) {
     }
 }
 
+async function createGenre(req, res) {
+    const { nama } = req.body;
+    try {
+        const newGenre = await db.Genre.create({ nama });
+        res.status(201).json(newGenre);
+    } catch (err) {
+        console.error('Error creating Genre:', err.message);
+        res.status(500).json({ error: 'Failed to create Genre' });
+    }
+}
+
+
 module.exports = {
     
 }
