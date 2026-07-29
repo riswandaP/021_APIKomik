@@ -67,5 +67,9 @@ async function deleteGenre(req, res) {
 }
 
 module.exports = {
-    
+    getAllGenre,
+    getGenreByID,
+    createGenre,
+    updateGenre,
+    deleteGenre
 }
