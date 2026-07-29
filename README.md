@@ -1,5 +1,4 @@
 Dokumentasi POSTMAN REGISTER
-<img width="1919" height="1079" alt="Screenshot 2026-07-29 104705" src="https://github.com/user-attachments/assets/16b3e717-355e-4be9-819b-88cb98da0d70" />
 <img width="1919" height="1079" alt="Screenshot 2026-07-27 111450" src="https://github.com/user-attachments/assets/cc7e6d41-39ae-46b3-88e9-44d0d40dbf2f" />
 
 
