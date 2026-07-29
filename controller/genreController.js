@@ -35,6 +35,22 @@ async function createGenre(req, res) {
     }
 }
 
+async function updateGenre(req, res) {
+    const { id } = req.params;
+    const { nama } = req.body;
+    try {
+        const genre = await db.Genre.findByPk(id);
+        if (!genre) {
+            return res.status(404).json({ error: 'Genre not found' });
+        }
+        await genre.update({ nama });
+        res.status(200).json(genre);
+    } catch (err) {
+        console.error('Error updating Genre:', err.message);
+        res.status(500).json({ error: 'Failed to update Genre' });
+    }
+}
+
 
 module.exports = {
     
